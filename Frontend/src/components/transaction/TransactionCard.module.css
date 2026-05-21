@@ -1,0 +1,118 @@
+.wrapper {
+  width: 100%;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+body {
+  background-color: #f5f6f8; /* light gray like dashboards */
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* individual transaction card */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background-color: #f2f4f7;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #e9eef6;
+  transform: translateY(-2px);
+}
+
+/* left side */
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  text-transform: capitalize;
+}
+
+.date {
+  font-size: 12px;
+  color: #666;
+}
+
+/* amount styles */
+.amountPositive {
+  font-weight: 600;
+  color: #1fc506; /* matches your primary blue */
+}
+
+.amountNegative {
+  font-weight: 600;
+  color: #ff4d4f;
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #111;
+  margin: 0 4px;
+}
+
+.pagination button:hover {
+  background-color: #e6e6e6;
+  transform: translateY(-2px);
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 14px;
+  color: #333;
+  min-width: 80px;
+  text-align: center;
+}

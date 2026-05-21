@@ -1,0 +1,35 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #dcdcdc;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: #555;
+  transition: 0.2s ease;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-item:hover {
+  color: #1677ff;
+}
+
+.footer-item.active {
+  color: #1677ff;
+}

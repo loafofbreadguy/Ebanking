@@ -1,0 +1,84 @@
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.form {
+  width: 100%;
+  max-width: 420px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f2f4f7;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+  color: #111;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #1677ff;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.15);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttonPrimary {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1677ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.buttonPrimary:hover {
+  background-color: #0f5fd6;
+  transform: translateY(-2px);
+}
+
+.buttonSecondary {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #111;
+}
+
+.buttonSecondary:hover {
+  background-color: #e6e6e6;
+  transform: translateY(-2px);
+}

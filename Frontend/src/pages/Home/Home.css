@@ -1,0 +1,62 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 20px;
+  padding-bottom: 100px;
+
+  box-sizing: border-box;
+}
+
+.home-header {
+  margin-bottom: 24px;
+}
+
+.home-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin: 0;
+}
+
+.home-header p {
+  color: #777;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#root {
+  width: 100%;
+}
+
+.inline-form {
+  margin-top: 15px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.2s ease-in-out;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

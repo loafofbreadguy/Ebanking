@@ -1,0 +1,27 @@
+.actions-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  margin: 20px;
+}
+
+.action-card {
+  flex: 1;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-4px);
+}
+
+.action-icon {
+  font-size: 28px;
+  color: #1677ff;
+  margin-bottom: 10px;
+}
