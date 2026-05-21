@@ -1,5 +1,5 @@
 **Banking Application**  
-A secure, feature-rich banking application built with Spring Boot and MySQL. This application provides comprehensive banking operations including user authentication, wallet management, transactions, and complaint handling.  
+A secure, feature-rich banking application built with Spring Boot, React and MySQL. This application provides comprehensive banking operations including user authentication, wallet management, transactions, and complaint handling.  
 **Project Overview**  
 This is a REST API-based banking application that handles core banking operations with advanced features like rate limiting, JWT authentication, transaction auditing, and multi-layered security.  
 **Technology Stack**  
@@ -17,7 +17,9 @@ Before running this application, ensure you have:
 - MySQL Server running locally (or accessible remotely)  
 - Maven installed  
 - Git for version control  
-**Installation and Setup**  
+
+**Installation and Setup**
+
 **1. Clone the Repository**  
 git clone <repository-url>  
  cd banking  
@@ -97,31 +99,37 @@ banking/
  └── README.md                                    # This file  
    
 **Key Features**  
+
 **Authentication & Authorization**  
 - User registration and login  
 - JWT-based authentication with refresh tokens  
 - Role-based access control (ADMIN, USER)  
 - Email verification for new accounts  
 - Secure password handling with encryption  
+
 **User Management**  
 - User registration and profile management  
 - User role management  
 - Account verification via email tokens  
 - Refresh token management  
+
 **Wallet Management**  
 - Create and manage multiple wallets  
 - View wallet balance and transaction history  
 - Wallet transfer capabilities  
+
 **Transaction Management**  
 - Send and receive money  
 - Track transaction status (PENDING, COMPLETED, FAILED)  
 - Transaction history with detailed logs  
 - Idempotency key support to prevent duplicate transactions  
 - Transaction audit logging  
+
 **Complaint Management**  
 - File complaints about transactions or services  
 - Track complaint status and resolution  
 - Complaint response handling  
+
 **Security Features**  
 - Rate limiting to prevent abuse  
 - JWT token-based authentication  
@@ -129,48 +137,62 @@ banking/
 - Input validation and sanitization  
 - Global exception handling  
 - HTTPS/TLS support configuration  
+
 **API Documentation**  
 - OpenAPI 3.0 specification  
 - Interactive Swagger UI available at http://localhost:8080/swagger-ui.html  
+
 **API Endpoints Overview**  
+
 **Authentication Endpoints**  
 - POST /auth/register - Register a new user  
 - POST /auth/login - User login  
 - POST /auth/refresh - Refresh access token  
 - POST /auth/logout - User logout  
+
 **User Endpoints**  
 - GET /users/{id} - Get user details  
 - PUT /users/{id} - Update user profile  
 - GET /users - List all users  
+
 **Wallet Endpoints**  
 - POST /wallets - Create a new wallet  
 - GET /wallets/{id} - Get wallet details  
 - GET /wallets/{id}/balance - Get wallet balance  
 - GET /wallets/{id}/transactions - Get wallet transactions  
+
 **Transaction Endpoints**  
 - POST /transactions/transfer - Initiate a transfer  
 - GET /transactions/{id} - Get transaction details  
 - GET /transactions - List transactions  
+
 **Complaint Endpoints**  
 - POST /complaints - File a new complaint  
 - GET /complaints/{id} - Get complaint details  
 - PUT /complaints/{id} - Update complaint  
 - GET /complaints - List complaints  
+
 **Configuration Details**  
+
 **Database Configuration**  
 - DDL Auto: Update (automatically creates/updates tables)  
 - Show SQL: Enabled for development  
+
 **JWT Configuration**  
 - Access token expiration: 1800000ms (approximately 1.67 minutes)  
 - Refresh token expiration: 604800000 ms (7 days)  
+
 **Email Configuration**  
 - SMTP Host: smtp.gmail.com  
 - Port: 587  
 - TLS: Enabled  
+
 **Application Profile**  
 - Default: dev (for local development)  
 - Can be changed to prod for production deployment  
+
 **Building the Application**  
+
 **Build JAR**  
 mvn clean package  
    
@@ -185,13 +207,17 @@ Run specific test class:
 mvn test -Dtest=BankingApplicationTests  
    
 **Development**  
+
 **Hot Reload**  
 The application includes Spring Boot DevTools for automatic restart on code changes. Simply save your files and the application will restart automatically.  
+
 **Accessing Swagger UI**  
 Once the application is running, access the API documentation at:  
 - http://localhost:8080/swagger-ui.html  
+
 **Database Schema**  
 The application uses Hibernate ORM with the following main entities:  
+
 **User Table**  
 | | | |  
 |-|-|-|  
@@ -300,6 +326,7 @@ The application uses Hibernate ORM with the following main entities:
 | created_at | TIMESTAMP | Audit log creation timestamp |   
    
 **Troubleshooting**  
+
 **Database Connection Issues**  
 - Ensure MySQL server is running  
 - Verify database credentials in application.properties  
